@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventi kalendárium</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v21.0"></script>
+</head>
+<body>
+    <div id="snowflakes"></div>
+
+    <!-- CALENDAR DOORS -->
+    <section class="calendar-grid">
+        <div class="title">
+            <div class="title-lines-container">
+                <p class="title-line1"> <img src="./logo.webp" alt="sob_logo" id="sob"></p>
+                <p class="title-line2">Adventi kalendáriuma<br><span class="bigger-text">2024</span></p>
+            </div><!-- closes title-lines-container -->
+            <div class="title-intro">
+
+
+                    Fogadjátok szeretettel ajándékunkat. Ez az adventi naptár szeretettel készült Csak Neked, annak, aki szeretettel olvassa. Minden nap nyiss ki egy ablakot, mindig az adott napon, ezzel készüljünk szívvel és lélekkel a karácsonyra. A naptár készítésében iskolánk valamennyi tanára és diákja közreműködött, hogy minél személyesebb legyen és minél inkább a szívekhez szóljon. <br><br>
+                    Ezzel a kis ajándékkal hangolódjunk közösen karácsonyra, Krisztus születésének ünnepére.<br><br>
+                    Fogadjátok szeretettel!
+                    <br>
+                    <br>
+                    <p style="font-size: 12px;">A naptárt készítette: Berki Levente Márkó 2/14 Szft-s tanuló, Rédai Dávid Tanár úr útmutatásával.</p>
+                    <p style="font-size: 12px;">A kalendárium képeit készítette: Mácsár Laura 2/14 Turisztika szakos tanuló.</p>
+
+            </div>
+        </div><!-- closes title -->
+    </section><!-- closes calendar-grid -->
+
+    <!-- MODAL POPUP BOX -->
+    <div id="modalPopup" class="modal">
+        <!-- MODAL CONTENT -->
+        <div class="modalContent">
+            <span class="close">&times;</span>
+            <h3 class="dailyDate">Dátum</h3>    
+            <h2 class="dailyTitle">Cím</h2>
+            <p class="dailyContent"></p>
+            <img class="dailyImage" style="display:none;">
+            <div class="dailyVideo" style="display:none;"></div>
+        </div><!-- closes modalContent -->
+    </div><!-- closes modalPopup -->
+     <script src="./script.js"></script>
+</body>
+</html>
