@@ -117,7 +117,12 @@ function setupModal() {
 function closeModal(modal) {
     modal.style.display = "none";
     document.body.classList.remove("modal-open");
-    if (debug) console.log("Modal closed.");
+    const video = modal.querySelector("video");
+    if (video) {
+        video.pause();
+        video.currentTime = 0;
+    }
+    if (debug) console.log("Modal closed and video stopped.");
 }
 
 // Creating snowflakes
