@@ -1,8 +1,8 @@
 const debug = false;
 const checkTime = true;
 
-const supabaseUrl = 'https://ezpiuxchtmvimyjbnfaw.supabase.co'
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV6cGl1eGNodG12aW15amJuZmF3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzE2NzIzMjksImV4cCI6MjA0NzI0ODMyOX0.hNjLP4ZlwgDr1abPPsrSkQ5EqMWyy6wpx7rydZlGj-0'
+const supabaseUrl = 'https://owcvwvctdukoynkcniih.supabase.co'
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im93Y3Z3dmN0ZHVrb3lua2NuaWloIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzMyMTQ4NDEsImV4cCI6MjA0ODc5MDg0MX0.KDhqC1EzkSIOA-_Xr5xCuyu1evFNa4wtVgjmpgjXtPk'
 const timeAPI= "https://timeapi.io/api/Time/current/zone?timeZone=Europe/Budapest"
 let data = []
 
