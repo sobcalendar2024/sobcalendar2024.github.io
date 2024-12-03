@@ -117,12 +117,20 @@ function setupModal() {
 function closeModal(modal) {
     modal.style.display = "none";
     document.body.classList.remove("modal-open");
+    
     const video = modal.querySelector("video");
     if (video) {
         video.pause();
         video.currentTime = 0;
     }
-    if (debug) console.log("Modal closed and video stopped.");
+
+    const iframe = modal.querySelector("iframe");
+    if (iframe) {
+        const iframeSrc = iframe.src;
+        iframe.src = iframeSrc;
+    }
+
+    if (debug) console.log("Modal closed and media stopped.");
 }
 
 // Creating snowflakes
