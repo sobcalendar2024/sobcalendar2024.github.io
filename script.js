@@ -1,5 +1,5 @@
 const debug = false;
-const checkTime = true;
+const checkTime = false;
 
 const supabaseUrl = 'https://owcvwvctdukoynkcniih.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im93Y3Z3dmN0ZHVrb3lua2NuaWloIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzMyMTQ4NDEsImV4cCI6MjA0ODc5MDg0MX0.KDhqC1EzkSIOA-_Xr5xCuyu1evFNa4wtVgjmpgjXtPk'
@@ -261,4 +261,5 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 document.getElementById('sob').addEventListener('click', function () {
     window.open('http://sobszeged.hu/', '_blank');
+
 });
